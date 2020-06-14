@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>UFO Sightings</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+    }
+    table {
+      width: 100%;    
+      background-color: #e5e7e9;
+    }
+
+    .button {
+    background-color: #adb5bd; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+    </style>
+</head>
+
+<body>
+
+  <!-- container 1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Container 2 -->
+  <div class="container">
+
+    <!-- row 1 -->
+    <div class="row">
+      <!-- First (and only column) -->
+      <div class="col-md-12" style="text-align: center">
+        <h1 style="padding-bottom:15px; padding-top:15px;">ALIENS-R-REAL</h1>
+        <h5 style="padding-bottom:15px; padding-top:15px;">UFO sightings from January 1, 2010 to January 13, 2010</h5>
+      </div>
+    </div>
+
+    <!-- row 2  -->
+    <div class="row">
+
+      <div class="col-md-3">
+        <form id="form">
+          <div class="form-group">
+            <label for="example-form">Enter Date</label>
+            <input class="form-control" id="date_input" name="date_input" type="date">
+          </div>
+          <button  id="button" type="button" class="btn btn-default, button">Enter</button>
+        </form>
+       
+      </div>
+
+      <div class="col-md-9">
+        <table id="ufo">
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>City</h>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+
+      <tbody> 
+    </tbody>
+    </table>
+    <h4 id='heading3'></h4>
+      </div>
+    </div>
+
+    
+
+   
+    
+
+  
+
+   
+   
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
